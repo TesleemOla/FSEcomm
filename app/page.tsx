@@ -1,12 +1,11 @@
-import Hero from "@/components/hero";
-import ConnectSupabaseSteps from "@/components/tutorial/connect-supabase-steps";
-import SignUpUserSteps from "@/components/tutorial/sign-up-user-steps";
-import { hasEnvVars } from "@/utils/supabase/check-env-vars";
+import { TodayFlash, Hero } from "@/components/ui";
+
 
 export default async function Index() {
   return (
-    <>
-      
-    </>
+    <div className="grid min-h-screen w-screen m-2 p-2 gap-5 font-[family-name:var(--font-geist-sans)]">
+      <Hero />
+      <TodayFlash />
+    </div>
   );
 }
